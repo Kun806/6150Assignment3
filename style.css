@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* 确保边框合并 */
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 2px solid green; /* 设置绿色边框 */
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgreen;
+}
+
+tr.selected {
+  background-color: yellow;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+button {
+  cursor: pointer;
+}
+
+#submitBtn.enabled {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.expandBtn {
+  margin-left: 10px;
+}
+
+/* Set the first row's background to green and text color to white */
+.green-row {
+  background-color: black; /* Green background for the header row */
+  color: white; /* White text color */
+}
+
+#addStudent {
+  background-color: white; /* 设置添加按钮的背景色为白色 */
+  border: 1px solid #ddd; /* 添加边框使按钮更具可视化 */
+  cursor: pointer; /* 确保按钮可点击 */
+}
+
+#addStudent:hover {
+  background-color: #f2f2f2; /* 添加悬停效果 */
+}
+
+#submit {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+button:enabled {
+  background-color: orange;
+}
+
+/* New style for checkbox and arrow button in the same cell for each row */
+.checkbox-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-arrow button {
+  margin-right: 10px; /* Space between the arrow and checkbox */
+}
+
+.checkbox-arrow input[type="checkbox"] {
+  margin-left: 5px; /* Add some space to the left of the checkbox */
+}
+
+.button-container {
+  text-align: center; /* 将按钮容器中的所有按钮居中 */
+  margin-top: 20px; /* 设置按钮与表格的垂直间距 */
+}
+
+#submit,
+#addStudent {
+  margin: 10px; /* 给按钮之间添加间距 */
+  padding: 10px 20px; /* 设置按钮的内边距 */
+  font-size: 16px; /* 设置按钮的字体大小 */
+  cursor: pointer; /* 显示可点击状态 */
+}
+
+#submit:disabled,
+#addStudent:disabled {
+  cursor: not-allowed; /* 禁用按钮时设置光标为不可点击 */
+}
+
+#submit {
+  background-color: gray; /* 默认背景色 */
+}
+
+#submit.enabled {
+  background-color: yellow; /* 启用时背景色 */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}

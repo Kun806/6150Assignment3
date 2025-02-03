@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="userInfo">Kun Hu NUID:002060269</h1>
+    <table>
+        <thead>
+            <tr class="green-row">
+                <th></th> <!-- Column header for actions -->
+                <th>Student</th>
+                <th>Advisor</th>
+                <th>Award Status</th>
+                <th>Semester</th>
+                <th>Type</th>
+                <th>Budget</th>
+                <th>Percentage</th>
+                <th class="delete-column hidden">Delete</th> <!-- Initially hidden -->
+                <th class="edit-column hidden">Edit</th> <!-- Initially hidden -->
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+            <!-- Student rows will be dynamically added here -->
+        </tbody>
+    </table>
+    <div class="button-container">
+        <button id="submit" class="disabled" disabled>SUBMIT SELECETED AWARDS</button>
+        <button id="addStudent">Add New Student</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
