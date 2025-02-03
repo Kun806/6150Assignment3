@@ -55,19 +55,19 @@ document
         .classList.toggle("hidden", !e.target.checked);
       row.querySelector(".edit").classList.toggle("hidden", !e.target.checked);
 
-      // 检查是否有任何复选框被选中
+      // Check if any checkbox is selected
       const submitBtn = document.getElementById("submit");
       const anyChecked =
         document.querySelectorAll(".selectStudent:checked").length > 0;
 
-      // 根据复选框选择状态启用/禁用 Submit 按钮
+      // Enable/Disable Submit button based on checkbox selection
       submitBtn.disabled = !anyChecked;
       if (anyChecked) {
-        submitBtn.style.backgroundColor = "yellow"; // 选中时背景变为黄色
-        submitBtn.style.cursor = "pointer"; // 启用按钮时可点击
+        submitBtn.style.backgroundColor = "yellow"; // Change background to yellow when checked
+        submitBtn.style.cursor = "pointer"; // Enable button when checked
       } else {
-        submitBtn.style.backgroundColor = "gray"; // 未选中时背景为灰色
-        submitBtn.style.cursor = "not-allowed"; // 禁用时不可点击
+        submitBtn.style.backgroundColor = "gray"; // Change background to gray when unchecked
+        submitBtn.style.cursor = "not-allowed"; // Disable button when unchecked
       }
     }
   });
@@ -83,6 +83,6 @@ document.getElementById("studentTable").addEventListener("click", function (e) {
     alert(`Edit details of ${row.cells[1].innerText}`);
   }
   if (e.target.classList.contains("expand")) {
-    e.target.innerText = e.target.innerText === "▶" ? "▼" : "▶";
+    e.target.innerText = e.target.innerText === "▶" ? "▼" : "▶"; // Toggle the arrow direction
   }
 });
